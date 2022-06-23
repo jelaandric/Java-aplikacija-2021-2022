@@ -24,7 +24,7 @@ public class DodavanjeRokovaController implements Initializable  {
     @FXML
     protected void nazad (ActionEvent evt){
         Stage stage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
-        Program.swapScene(stage, "prijava-view.fxml", "Administracija");
+        Program.swapScene(stage, "prijava-view.fxml", "Dobrodošli na sustav!");
     }
     @FXML
     ChoiceBox nastavnikTxt;
@@ -105,6 +105,7 @@ public class DodavanjeRokovaController implements Initializable  {
         }
 
     }
+
 
     @FXML
     private void predmeti(){

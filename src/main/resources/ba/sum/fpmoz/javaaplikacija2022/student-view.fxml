@@ -8,7 +8,7 @@
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.sum.fpmoz.javaaplikacija2022.controller.StudentController">
    <children>
-      <Button layoutX="42.0" layoutY="14.0" mnemonicParsing="false" onAction="#natrag" text="Natrag" />
+      <Button layoutX="42.0" layoutY="14.0" mnemonicParsing="false" onAction="#natrag" text="Odjava" />
       <TableView fx:id="tableViewRokovi" layoutX="179.0" layoutY="80.0" prefHeight="200.0" prefWidth="226.0">
         <columns>
           <TableColumn fx:id="tableColumnDatum" prefWidth="75.0" text="Datum" />

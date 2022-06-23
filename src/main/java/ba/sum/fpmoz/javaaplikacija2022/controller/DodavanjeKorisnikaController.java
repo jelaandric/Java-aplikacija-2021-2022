@@ -23,7 +23,7 @@ public class DodavanjeKorisnikaController {
     @FXML
     protected void nazad (ActionEvent evt){
         Stage stage = (Stage) ((Node) evt.getSource()).getScene().getWindow();
-        Program.swapScene(stage, "nastavnik-view.fxml", "Administracija");
+        Program.swapScene(stage, "prijava-view.fxml", "Dobrodošli na sustav!");
     }
     @FXML
     protected void dodajKorisnika () throws Exception {

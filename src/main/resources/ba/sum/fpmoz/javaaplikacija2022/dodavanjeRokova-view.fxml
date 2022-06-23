@@ -36,6 +36,6 @@
         </columns>
       </TableView>
       <Button fx:id="izbrišiBtn" layoutX="178.0" layoutY="209.0" mnemonicParsing="false" onAction="#izbrišiRok" text="Izbriši" />
-      <Button layoutX="47.0" layoutY="30.0" mnemonicParsing="false" onAction="#nazad" text="Natrag" />
+      <Button layoutX="47.0" layoutY="30.0" mnemonicParsing="false" onAction="#nazad" text="Odjava" />
    </children>
 </AnchorPane>

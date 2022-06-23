@@ -16,7 +16,7 @@ public class Program extends Application {
     @Override
     public void start(Stage stage) throws IOException, SQLException {
         FXMLLoader fxmlLoader = new FXMLLoader(Program.class.getResource("prijava-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 400, 400);
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
         stage.setTitle("Dobrodošli na sustav!");
         stage.setScene(scene);
         stage.show();
@@ -26,7 +26,7 @@ public class Program extends Application {
 
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(Program.class.getResource(viewName));
-            Scene scene= new Scene(fxmlLoader.load(), 400, 400);
+            Scene scene= new Scene(fxmlLoader.load(), 600, 400);
             stage.setTitle(title);
             stage.setScene(scene);
             stage.show();
