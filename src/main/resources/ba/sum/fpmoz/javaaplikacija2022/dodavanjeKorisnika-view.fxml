@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.sum.fpmoz.javaaplikacija2022.controller.DodavanjeKorisnikaController">
+   <children>
+      <Button layoutX="29.0" layoutY="30.0" mnemonicParsing="false" onAction="#nazad" text="Nazad" />
+      <GridPane layoutX="21.0" layoutY="64.0" prefHeight="195.0" prefWidth="417.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Ime" />
+            <Label text="Prezime" GridPane.rowIndex="1" />
+            <Label prefHeight="17.0" prefWidth="63.0" text="E-mail" GridPane.rowIndex="2" />
+            <Label layoutX="10.0" layoutY="99.0" text="Lozinka" GridPane.rowIndex="3" />
+            <Label layoutX="10.0" layoutY="138.0" text="Uloga" GridPane.rowIndex="4" />
+            <TextField fx:id="ImeTxt" GridPane.columnIndex="1" />
+            <TextField fx:id="PrezimeTxt" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="EmailTxt" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="LozinkaTxt" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="UlogaTxt" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+         </children>
+      </GridPane>
+      <Button layoutX="386.0" layoutY="297.0" mnemonicParsing="false" onAction="#dodajKorisnika" text="Dodaj korisnika" />
+   </children>
+</AnchorPane>

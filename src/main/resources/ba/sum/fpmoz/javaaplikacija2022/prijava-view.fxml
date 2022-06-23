@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="419.0" prefWidth="421.0" spacing="20.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.sum.fpmoz.javaaplikacija2022.controller.PrijavaController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label fx:id="GreškaLbl" />
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="186.0" minWidth="10.0" prefWidth="105.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="351.0" minWidth="10.0" prefWidth="276.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="E-mail" />
+            <Label text="Lozinka" GridPane.rowIndex="1" />
+            <TextField fx:id="EmailTxt" GridPane.columnIndex="1" />
+            <Button fx:id="PrijavaBtn" mnemonicParsing="false" onAction="#prijava" text="Prijava" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Uloga" GridPane.rowIndex="2" />
+            <RadioButton fx:id="NastavnikRB" mnemonicParsing="false" text="Nastavnik" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <RadioButton fx:id="StudentRB" mnemonicParsing="false" text="Student" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="100.0" />
+               </GridPane.margin>
+            </RadioButton>
+            <PasswordField fx:id="LozinkaTxt" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+         </children>
+      </GridPane>
+   </children>
+</VBox>

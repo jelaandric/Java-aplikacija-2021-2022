@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.sum.fpmoz.javaaplikacija2022.controller.StudentController">
+   <children>
+      <Button layoutX="42.0" layoutY="14.0" mnemonicParsing="false" onAction="#natrag" text="Natrag" />
+      <TableView fx:id="tableViewRokovi" layoutX="179.0" layoutY="80.0" prefHeight="200.0" prefWidth="226.0">
+        <columns>
+          <TableColumn fx:id="tableColumnDatum" prefWidth="75.0" text="Datum" />
+          <TableColumn fx:id="tableColumnPredmet" prefWidth="75.0" text="Predmet" />
+            <TableColumn fx:id="tableColumnNastavnik" prefWidth="75.0" text="Nastavnik" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
